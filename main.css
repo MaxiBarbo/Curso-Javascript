@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("Multimedia/Png.jfif");
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 100vh;
+
+} 
+form{
+    margin-left: 20rem;
+    margin-top: 2rem;
+   
+}
+button{
+    margin:1rem;
+}    
+.b1{
+ width: 5rem;
+ margin-left: 1rem;
+}    
+  
+.div_calculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-left: 30rem;     
+}
+.operadores{
+    display: flex;
+    flex-direction: row;
+}
+input{
+    width: 10rem;
+}
+output{
+    color: white;
+    font-size: 2em;
+}
+h1{
+    color: orange;
+    margin-top: 2rem;
+    margin-left: 2rem;   
+}
+#suma,#resta,#multiplicacion,#division,#r{
+background-color: blue;
+}
+span{
+    color: yellow;
+    font-size: 1.2em;
+}
+label{
+    margin:1rem;
+    color: orange;
+}
+.form-group{
+    margin-left: 15rem;
+}
+input{
+    border-radius: 0.5rem;
+}
