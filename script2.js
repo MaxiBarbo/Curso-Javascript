@@ -33,16 +33,22 @@ function calcularDias(){
     let nombre = prompt("Por favor ingrese su nombre");
     let dias_vacaciones = prompt ("Por favor ingrese dias que necesita");
     let años_trabajados = prompt ("Ingrese años en la actividad");
-    
+    let trabajar = diferencia(años_trabajados,2);
+    let licencia = diferencia(años_trabajados,dias_licencia);
    
     alert("hola" + " " +nombre + " " + apellido);
+
     if(años_trabajados <= 10){
-        var min = años_trabajados / 2;
-        alert(min + " " + "dias");
-        return apellido;
+
+        alert(trabajar + " " + "dias");
+        return true;
     }
 
     let dias_licencia = años_trabajados / dias_vacaciones + 10;
     alert("te corresponden" + " " +  dias_licencia + " " + "dias");
        
+}
+
+function diferencia(a,b){
+    return a/b;
 }
