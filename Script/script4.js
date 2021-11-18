@@ -1,7 +1,7 @@
 
 function ciudad() {
    
-    let city =  prompt("eligue tipo de baguette").toLocaleLowerCase();
+    let city =  prompt("Ingrese Ciudad").toLocaleLowerCase();
     
     while (city != 'salir') {
 
