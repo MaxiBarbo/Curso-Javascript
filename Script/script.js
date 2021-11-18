@@ -12,8 +12,6 @@ function valorDolar(moneda,resultado){
 
     let resultadoEuro = multi(resultado,euro);
 
-    
-
     pregunta = prompt("iva incluido? escribe si o no")
 
     iva1 = sumarIva(resultadoEuro);

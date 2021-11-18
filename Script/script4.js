@@ -28,8 +28,9 @@ function ciudad() {
     }
 }
 
-function incrementar(){
+//Funcion Incrementar numeros pedido las veces necesarias
 
+function incrementar(){
 
 let acumulador = prompt("Ingrese numero por el que desea comenzar")
 let multi = prompt ("ingrese multiplo que desea ver")

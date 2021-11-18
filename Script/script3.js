@@ -42,7 +42,11 @@
 //     return a*b;
 //     }
 
-function jugador(){
+
+
+//Calculo de precios con descuentos e Iva aplicado de ser solicitado
+
+function precios(){
 
 var precio = prompt("Introduzca Precio producto (en Ars): ");
 var descuento = prompt("Introduzca descuento (en Ars): ");
