@@ -12,7 +12,7 @@ function valorDolar(moneda,resultado){
 
     let resultadoEuro = multi(resultado,euro);
 
-    pregunta = prompt("iva incluido? escribe si o no")
+    pregunta = confirm("iva incluido?")
 
     iva1 = sumarIva(resultadoEuro);
     iva2 = sumarIva(resultadoDolar);
@@ -27,11 +27,11 @@ function valorDolar(moneda,resultado){
     }
     else if (moneda === "dolar"){
        
-        if(pregunta === "si"){
+        if(pregunta){
         alert("Con Iva $" + iva2 + " Ars")
             
         }
-        else if (pregunta === "no");{
+        else if (pregunta === false);{
         alert("Sin Iva $" + resultadoDolar + " Ars");
             
         } 
@@ -62,6 +62,18 @@ function valorDolar(moneda,resultado){
 
     function multi(a,b){
     return a*b;
+    } 
+
+//Funcion para calcular iva
+class producto {
+
+    constructor(nombre,precio){
+          this.nombre = nombre.toUpperCase();
+          this.precio = parseFloat(precio);
+          this.vendido = false;
     }
-    
+    sumaIva(){
+          this.precio = this.precio * 1.21;
+    }
+}
 

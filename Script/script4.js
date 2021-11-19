@@ -28,18 +28,37 @@ function ciudad() {
     }
 }
 
-//Funcion Incrementar numeros pedido las veces necesarias
+//Funcion para agregar personas a un array mediante ingreso de sus datos
 
 function incrementar(){
 
-let acumulador = prompt("Ingrese numero por el que desea comenzar")
-let multi = prompt ("ingrese multiplo que desea ver")
-let cantidad = prompt("ingrese cantidad de veces a repetir")
+let array_nombres = ["maxi","pumi","iri","nanci","ernesto","luli","vane"];
+let array_edad = [34,22,19,1,70,60];
 
-for (let i = 0; i < cantidad ; i++) {
+let acumulador = prompt("Ingrese su nombre")
+let acumulador_edad = prompt ("ingrese su apellido")
+let acumulador_apellido = prompt("ingrese su edad")
+
+
+    array_nombres.push(typeof acumulador);
+        
     
-    resultado = acumulador++ * multi;
-    alert(resultado);
+
+    array_edad.push(parseInt(acumulador_edad));
+     
+
+    array_apellido.push(acumulador_apellido);
     
-    }
+
+    alert(array_nombres.join("-"));
+    alert(array_edad.join("-"))
+    alert(array_apellido.join("-"))
+    
 }
+        
+
+
+    
+    
+    
+    
