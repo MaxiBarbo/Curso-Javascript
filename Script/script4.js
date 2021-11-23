@@ -1,4 +1,4 @@
-
+// Funcion elegir ciudad utilizando la declaracion Switch
 function ciudad() {
    
     let city =  prompt("Ingrese Ciudad").toLocaleLowerCase();
@@ -32,27 +32,23 @@ function ciudad() {
 
 function incrementar(){
 
+// Array creado para darle distintos usos a los datos
+    
 let array_nombres = ["maxi","pumi","iri","nanci","ernesto","luli","vane"];
 let array_edad = [34,22,19,1,70,60];
 
+// Linea de codigo generada para que el usuario ingrese sus datos y luego se guarde en "array_nombres"
+
+let ingreso_nombre = array_nombres.push(prompt("Ingrese su nombre"));
+
+       
+//For declarado para buscar lo que necesite dentro de array_nombre
+
+/*
 let acumulador = prompt("Ingrese su nombre")
 let acumulador_edad = prompt ("ingrese su apellido")
 let acumulador_apellido = prompt("ingrese su edad")
-
-
-    array_nombres.push(typeof acumulador);
-        
-    
-
-    array_edad.push(parseInt(acumulador_edad));
-     
-
-    array_apellido.push(acumulador_apellido);
-    
-
-    alert(array_nombres.join("-"));
-    alert(array_edad.join("-"))
-    alert(array_apellido.join("-"))
+*/   
     
 }
         

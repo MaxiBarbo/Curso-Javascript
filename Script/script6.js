@@ -1,64 +1,70 @@
+//  Funcion pensada para tomar datos solicitados al usuario, guardar los mismos, para luego poder realizar pedidos en nuetra web
 
-//Aplicando funcion constructor en personas
+//  Aplicando funcion constructor en personas
+class Persona {
 
-function sumarPersona(nombre,apellido,edad){
-
+    constructor(nombre,apellido,edad,contacto){
     this.nombre = nombre;
     this.apellido = apellido;
     this.edad = edad;
+    this.contacto = contacto; 
+    }
+    informacion(){
+
+        return this.nombre + " " + this.apellido +  " "  + this.edad + " " + this.contacto;
+    }  
+} 
+//  Funcion para solicitar datos al usuario  
+    function solicitar_datos(){
+
+        let nombre = prompt("Ingrese su nombre");
+        let apellido = prompt("Ingrese su apellido");
+        let edad = parseInt(prompt("Ingrese su edad"));
+        let contacto = prompt("Ingrese un numero telefonico para contactar");
     
-}
+    if (nombre !== " " && apellido !== " " && edad !== " "  && contacto !== " "){
 
-// para agregar una nueva persona al constructor de utiliza "new persona"
-
-let persona1 = new persona1 ("maxi"," barbo", 34);
-let persona2 = new persona2 ("irina","barbo?",1); 
-
-// Funcion para solicitar datos al usuario por ingreso
-
-function solicitar_datos(){
-    let nombre = prompt("Ingrese el nombre");
-    let apellido = prompt("Ingrese la apellido");
-    let edad = parseInt(prompt("Ingrese la edad"));
-    let genero = prompt("Ingrese el genero");
-    
-
-    if (nombre != '' && apellido != '' && edad != ''  && genero != '' ){
-
-        let persona2 = new Persona2(nombre,apellido,edad,genero);
-        arreglo_persona2.push(persona2);
-  
+        let array_nombres = new Persona(nombre,apellido,edad,contacto);
+        array_nombres.push(array_nombres);     
     }
 }
-let arreglo_persona2 = new Array();
+// Funcion para iniciar Formulario para ingresar datos solicitados
+    function iniciar() {
 
-let resp;
-do{
-    resp = confirm("Desea cargar nueva persona");
-    if (resp){
+        let preguntar = confirm("Desea registrarse?")
 
-        solicitar_datos();
+        if (preguntar){
 
-    }
+            buscar();
+             
+                    
+    } 
+        else {
 
-}while(resp)
+            alert("Muchas gracias! Nos vemos en la proxima :)")
+    }  
+}        
+// Array para almacenar datos ingresados
 
+    function buscar(){
 
-for (let i = 0 ;i<arreglo_perros.length;i++){
+        const array_nombres = [];
+        array_nombres.push(new Persona("juan","perez",23,155368748));
+        array_nombres.push(new Persona("mario","cocu",18,165478934));
+        array_nombres.push(new Persona("carlos","melo",69,153202369));
+        array_nombres.push(new Persona("mariano", "toca",10,164878965));
+        array_nombres.push(new Persona("rodrigo", "peloncho",14,15698742));
+        array_nombres.push(new Persona("peringon", "caranepe",34,153779966));
 
-    alert(arreglo_perros[i].nombre);
+        
+        for (let i = 0; i < array_nombres.length; i++) {
 
-} 
+            if(array_nombres[i] === nombre){
+                alert(array_nombres.informacion());  
+                
+   }
+       
+ }       
+}      
 
-
-
-
-let mensaje = "";
-for (let i = 0 ;i<arreglo_perros.length;i++){
-
-    mensaje = mensaje + "\n" + (arreglo_perros[i].getInfo());
-
-} 
-
-
-alert(mensaje);
+   

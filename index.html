@@ -19,7 +19,7 @@
     <main>
         <h1>Generando Codigos Javascript</h1>
 
-        <form>
+        <div>
             <button type="button" class="btn btn-outline-info"   onclick="calcularDias();">Dias Vacaciones</button>
 
             <button type="button" class="btn btn-outline-light" onclick="calcripto();">Cripto</button>
@@ -32,42 +32,51 @@
 
             <button type="button" class="btn btn-outline-secondary" onclick="incrementar();">Incremento</button>
 
-
             <button type="button" class="btn btn-outline-danger" onclick="precios();">Precios</button>
 
             <button type="button" class="btn btn-outline-success" onclick="">Jugador</button>
 
-        </form>
+
+        </div>
 
     </main>
 
-                    <div class="form-group">
-                        <label for="email"><b>User</b></label>
-                        <input class="input-index" type="text" placeholder="Enter Email" name="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="psw"><b>Password</b></label>
-                        <input class="input-index" type="password" placeholder="Enter Password" name="psw" id="psw" required>
-                    </div>
-                    
+        <!--Inicio Form Registro-->
+    <form action="/action_page.php">
+        <div class="registro-form">
+          <h1 class="titulo-agenda">Registro</h1>
+          <p class="p1">Favor de Completar la siguiente solicitud.</p>
+          <hr>
+          <label for="text" class="titulo-reserva">Nombre</label>
+          <input type="text" class="form-control2" id="text" placeholder="Ingresa tu Nombre">
+          <label class="titulo-reserva" for="email">Email</label>
+          <input class="form-control2" type="text" placeholder="Enter Email" name="email" id="email" required>
+          <label class="titulo-reserva" for="psw">Password</label>
+          <input class="form-control2" type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          <label class="titulo-reserva" for="psw-repeat">Repeat Password</label>
+          <input class="form-control2" type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+          <button  type="button" class="btn btn-outline-info" onclick="iniciar();">Confirmar</button>
+          <p class="p1">Tenes Cuenta? <a href="#">Log in</a>.</p>
+        </div>
+      </form>
+      <!--Fin Form Registro-->           
 
 <footer>
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
 
 
 <script src="Script/script1.js"></script>
 <script src="Script/script2.js"></script>
 <script src="Script/script3.js"></script>
 <script src="Script/script4.js"></script>
-<script src="Script/script.js"></script>
+<script src="Script/script5.js"></script>
+<script src="Script/script6.js"></script>
 
-<script src="script1.js"></script>
-<script src="script2.js"></script>
-<script src="script3.js"></script>
-<script src="script4.js"></script>
-<script src="script.js"></script>
 
 </body>
 </html>

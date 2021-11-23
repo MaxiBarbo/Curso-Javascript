@@ -1,19 +1,14 @@
 //Funcion para calcular cambio divisa relacion ars/Usd - ars/euro
 
-
-
 function valorDolar(moneda,resultado){
-
     moneda = prompt("Ingrese dolar o euro").toLowerCase();
-
     resultado = parseInt(prompt("Ingrese Cantidad Deseada"));
 
     let resultadoDolar = multi(resultado,dolar);
-
     let resultadoEuro = multi(resultado,euro);
 
     pregunta = confirm("iva incluido?")
-
+    
     iva1 = sumarIva(resultadoEuro);
     iva2 = sumarIva(resultadoDolar);
 
@@ -34,8 +29,7 @@ function valorDolar(moneda,resultado){
         else if (pregunta === false);{
         alert("Sin Iva $" + resultadoDolar + " Ars");
             
-        } 
-        
+        }     
     }
     
     else if(moneda === "euro"){
@@ -63,17 +57,3 @@ function valorDolar(moneda,resultado){
     function multi(a,b){
     return a*b;
     } 
-
-//Funcion para calcular iva
-class producto {
-
-    constructor(nombre,precio){
-          this.nombre = nombre.toUpperCase();
-          this.precio = parseFloat(precio);
-          this.vendido = false;
-    }
-    sumaIva(){
-          this.precio = this.precio * 1.21;
-    }
-}
-
