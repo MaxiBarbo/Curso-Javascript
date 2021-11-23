@@ -3,12 +3,12 @@
 
 function precios(){
 
-var precio = prompt("Introduzca Precio producto en $ Ars: ");
-var descuento = prompt("Introduzca descuento en $ Ars: ");
+var precio = prompt("Introduzca Precio producto en $Ars: ");
+var descuento = prompt("Introduzca descuento en $Ars: ");
  
-alert("Precio neto = " + calculoPVP(precio,descuento)[0] + " ars" );
-alert("IVA = " + calculoPVP(precio,descuento)[1] + " ars" );
-alert("Precio Final = " + calculoPVP(precio,descuento)[2] + " ars");
+alert("Precio neto = " + calculoPVP(precio,descuento)[0] + "$ ars" );
+alert("IVA = " + calculoPVP(precio,descuento)[1] + "$ ars" );
+alert("Precio Final = " + calculoPVP(precio,descuento)[2] + "$ ars");
  
 function calculoPVP(precio, descuento) {
       var IVA = 0.21;

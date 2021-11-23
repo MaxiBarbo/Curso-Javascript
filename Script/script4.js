@@ -1,7 +1,7 @@
 // Funcion elegir ciudad utilizando la declaracion Switch
 function ciudad() {
    
-    let city =  prompt("Ingrese Ciudad").toLocaleLowerCase();
+    let city =  prompt("Eligue entre 1 - 2 - 3 - 4").toLocaleLowerCase();
     
     while (city != 'salir') {
 
@@ -22,6 +22,7 @@ function ciudad() {
             case "4":
                 alert("Fisherton");
                 break;
+               
         }
         
         city = prompt("eligue un numero de 1 a 4").toLocaleLowerCase();
@@ -44,12 +45,10 @@ let ingreso_nombre = array_nombres.push(prompt("Ingrese su nombre"));
        
 //For declarado para buscar lo que necesite dentro de array_nombre
 
-/*
 let acumulador = prompt("Ingrese su nombre")
 let acumulador_edad = prompt ("ingrese su apellido")
 let acumulador_apellido = prompt("ingrese su edad")
-*/   
-    
+     
 }
         
 

@@ -59,7 +59,8 @@ output{
 h1{
     color: orange;
     margin-top: 2rem;
-    margin-left: 2rem;   
+    margin-bottom: 2rem; 
+    text-align: center;  
 }
 #suma,#resta,#multiplicacion,#division,#r{
 background-color: blue;
@@ -77,4 +78,7 @@ label{
 }
 input{
     border-radius: 0.5rem;
+}
+.titulo-agenda{
+    font-size: 2em;
 }

@@ -36,7 +36,7 @@ function calcularDias(){
     let trabajar = diferencia(años_trabajados,2);
     let licencia = diferencia(años_trabajados,dias_licencia);
    
-    alert("hola" + " " +nombre + " " + apellido);
+    alert("hola" + " " + nombre + " " + apellido);
 
     if(años_trabajados <= 10){
 
