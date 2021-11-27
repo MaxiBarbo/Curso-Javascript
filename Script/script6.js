@@ -106,8 +106,8 @@ class Persona {
         }
             return check;
     }
-
-    function buscar_user(user){
+    
+    function buscar_user(userData){
         
         if (!localStorage.getItem("listaUser")){
 
@@ -115,22 +115,16 @@ class Persona {
         }
 
         let dato_guardado = JSON.parse(localStorage.getItem("listaUser"));
-        let encontrado = false;
-        let a = 0;
+        let nuevodato = false;
+        let i = 0;
 
-        while (!encontrado && a !== dato_guardado.length){
+        dato_guardado.map(i => console.log(i.user))
 
-            if( dato_guardado[a].usuario == user){
+        let nuevodato =  dato_guardado.find(i => { return i.user == userData})
 
-                encontrado = dato_guardado[a];
-                return encontrado;    
-            }
-                i++;
-        }
-            return encontrado;
+            console.log(nuevodato)
+
     }
-
-
 
 // Array para almacenar datos ingresados por usuario (Nombre ,Apellido, Edad, Contacto)
 const array_nombres = [];
