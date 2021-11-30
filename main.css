@@ -6,39 +6,35 @@ body {
     background-attachment: fixed;
     width: auto;
     height: 100vh;
-
+}
+h2{
+    color: #FFD23F;
+}
+h1{
+    text-align: center;
+}
+.simuladores{
+    display: flex;
+    justify-content: center;
 }
 #persona{
-width: 12rem;
-height: 3rem;
-background-color: blueviolet;
-margin: 3rem;
-}
-.registro-form{
- display: flex;
- flex-direction: column;
- align-items: center;
- width: 50rem;
- height: 60rem;
+    width: 12rem;
+    height: 3rem;
+    background-color: blueviolet;
+    margin: 3rem;
 }
 .p1{
- color: greenyellow;
- font-size: 1em;   
- opacity: 70%;
-}
-form{
-    margin-left: 20rem;
-    margin-top: 2rem;
-   
+    color: greenyellow;
+    font-size: 1em;   
+    opacity: 70%;
 }
 button{
-    margin:1rem;
+    margin-bottom:2rem;
 }    
 .b1{
- width: 5rem;
- margin-left: 1rem;
-}    
-  
+    width: 5rem;
+    margin-left: 1rem;
+}     
 .div_calculadora{
     display: flex;
     flex-direction: column;
@@ -49,36 +45,72 @@ button{
     display: flex;
     flex-direction: row;
 }
-input{
-    width: 10rem;
-}
-output{
-    color: white;
-    font-size: 2em;
-}
-h1{
-    color: orange;
-    margin-top: 2rem;
-    margin-bottom: 2rem; 
-    text-align: center;  
-}
+
 #suma,#resta,#multiplicacion,#division,#r{
-background-color: blue;
+    background-color: blue;
 }
 span{
     color: yellow;
     font-size: 1.2em;
 }
-label{
-    margin:1rem;
-    color: orange;
-}
-.form-group{
-    margin-left: 15rem;
-}
-input{
-    border-radius: 0.5rem;
-}
 .titulo-agenda{
     font-size: 2em;
 }
+.login {
+    min-height: 100vh;
+}
+ 
+.bg-image {
+    background-image: url('Multimedia/imagen-header1.jfif');
+    background-size: cover;
+    background-position:bottom left;
+    opacity: 50%;
+    height: 45rem;
+  }
+  .login-heading {
+    font-weight: 300;
+  }
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  .btn1{
+      margin-bottom: 1rem; 
+      width: 100%;  
+  }
+  .btn2{
+      margin-right: 2rem;
+  }
+  .btn3{
+    width: 100%;
+    
+  }    
+  .btn-google {
+    color: white !important;
+    background-color: #ea4335;
+    width: 100%;
+     
+  }
+  .btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+    width: 100%;
+     
+  }
+  .borde{
+      border: 1px solid wheat;
+      width: 30rem; 
+      border-radius: 3rem;
+  }
+  .div1{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+  }
+  .btn3{
+      width: 10rem;
+  }

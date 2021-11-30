@@ -1,7 +1,5 @@
 //Funcion para calcular cambio divisa relacion ars/Usd - ars/euro
 
-
-
 function valorDolar(moneda,resultado){
 
     moneda = prompt("Ingrese dolar o euro").toLowerCase();
