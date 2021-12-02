@@ -1,7 +1,7 @@
 
 // Mismo color todas las etiquetas "p"
 
-let titulos = document.getElementsByTagName("h1");
+let titulos = document.getElementById("tituloH1"); 
 
 for (let i = 0; i < titulos.length; i++) {
 
@@ -10,7 +10,8 @@ titulos[i].style.color = "#BFD7EA";
 }
 // jugando con las propiedades en etiquetas H1
 function changeText() {
-    let cambiar = document.getElementById("h1");  
+    let cambiar = document.getElementById("tituloH1");  
+
     let iniciar = confirm("Cambiar Propiedades al Texto?");
 
      if(iniciar){
@@ -43,8 +44,10 @@ function changeText() {
             } 
             else {
                 return
-            }
-	   
+            } 
+    }
+    else {
+
     }
 }
 
@@ -75,12 +78,8 @@ for (let i = 0; i < colorNav.length; i++) {
 //Variable para cambiar color de los titulos H2 
 let parrafo = document.createElement("h2");
 parrafo.innerHTML = "Mi primer parrafo H2 con Javascript";
-parrafo.style.color = "red";
+parrafo.style.color = "grey";
 document.body.appendChild(parrafo);
-
-
-
-
 
 
 

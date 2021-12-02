@@ -14,12 +14,27 @@ class Persona {
 
         return this.nombre + " " + this.apellido +  " "  + this.edad + " " + this.contacto;
     }     
-} 
+}
 
+const array_nombres = [];
+
+array_nombres.push(new Persona("juan","perez",23,155368748));
+array_nombres.push(new Persona("mario","cocu",18,165478934));
+array_nombres.push(new Persona("carlos","melo",69,153202369));
+array_nombres.push(new Persona("mariano", "toca",10,164878965));
+array_nombres.push(new Persona("rodrigo", "peloncho",14,15698742));
+array_nombres.push(new Persona("peringon", "caranepe",34,153779966));
+ 
+for (const persona of array_nombres){
+
+    let mayor = persona[nombre] + persona;
+}
+
+ 
 // Funcion iniciar Formulario para ingresar datos solicitados
 
-    function iniciar() {
-
+    function iniciar(){
+       
         let preguntar = confirm("Ingrese su usuario")
 
         if (preguntar){
@@ -46,7 +61,7 @@ class Persona {
                 solicitar_datos();
             }
         }
-    }
+   
 //  Funcion para solicitar datos al usuario 
 
     function solicitar_datos(){
@@ -66,7 +81,7 @@ class Persona {
         }        
     }  
    
-
+}
     function guardar_user(nuevo_user){
 
         let dato = localStorage.getItem("listaUser")
@@ -127,18 +142,3 @@ class Persona {
     }
 
 // Array para almacenar datos ingresados por usuario (Nombre ,Apellido, Edad, Contacto)
-const array_nombres = [];
-array_nombres.push(new Persona("juan","perez",23,155368748));
-array_nombres.push(new Persona("mario","cocu",18,165478934));
-array_nombres.push(new Persona("carlos","melo",69,153202369));
-array_nombres.push(new Persona("mariano", "toca",10,164878965));
-array_nombres.push(new Persona("rodrigo", "peloncho",14,15698742));
-array_nombres.push(new Persona("peringon", "caranepe",34,153779966));
-
-for (const Persona of array_nombres){
-    Persona.informacion();
-} 
-   
-      
-// Declarando array de prueba solicitar
-   
