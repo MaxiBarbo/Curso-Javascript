@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("Multimedia/Png.jfif");
+    background-image: url("../Multimedia/Png.jfif");
     background-size: cover;
     background-attachment: fixed;
     width: auto;
@@ -62,7 +62,7 @@ span{
 }
  
 .bg-image {
-    background-image: url('Multimedia/imagen-header1.jfif');
+    background-image: url('../Multimedia/imagen-header1.jfif');
     background-size: cover;
     background-position:bottom left;
     opacity: 50%;
@@ -115,8 +115,14 @@ span{
   .btn3{
       width: 10rem;
   }
-  #cajita{
-      width: 200px;
-      height: 150px;
+  #cajaNombres{
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 300px;
       background-color: tomato;
+
+  }
+  #cajaNombres div img{
+      width: 50%;
   }
