@@ -13,7 +13,7 @@
 
             if (user !==false){
 
-                alert("Gracias por resgistrarte" + usuario.informacion());
+                alert("Gracias por resgistrarte");
             }                     
             else {
 
@@ -88,23 +88,23 @@
             return check;
     }
     
-    function buscar_user(userData){
+    // function buscar_user(userData){
         
-        if (!localStorage.getItem("listaUser")){
+    //     if (!localStorage.getItem("listaUser")){
 
-            return false;
-        }
+    //         return false;
+    //     }
 
-        let dato_guardado = JSON.parse(localStorage.getItem("listaUser"));
-        let nuevodato = false;
-        let i = 0;
+    //     let dato_guardado = JSON.parse(localStorage.getItem("listaUser"));
+    //     let nuevodato = false;
+    //     let i = 0;
 
-        dato_guardado.map(i => console.log(i.user))
+    //     dato_guardado.map(i => console.log(i.user))
 
-        let nuevodato =  dato_guardado.find(i => { return i.user == userData})
+    //     let nuevodato =  dato_guardado.find(i => { return i.user == userData})
 
-            console.log(nuevodato)
+    //         console.log(nuevodato)
 
-    }
+    // }
 
 // Array para almacenar datos ingresados por usuario (Nombre ,Apellido, Edad, Contacto)

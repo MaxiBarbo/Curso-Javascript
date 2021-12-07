@@ -45,12 +45,12 @@ function crear_contenedor(usuarios){
 
     div.addEventListener("mouseover",()=>{
 
-        div.style.backgroundColor = "red";
+        div.style.backgroundColor = "#593837";
     });
 
     div.addEventListener("mouseout",()=>{
 
-        div.style.backgroundColor = "grey"
+        div.style.backgroundColor = "#94B9AF"
     });
 // Se crea appenchild en caja nombres para meterlos dentro del div craado para img y h2
     cajaNombres.appendChild(div)
