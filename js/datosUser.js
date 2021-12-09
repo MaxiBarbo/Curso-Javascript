@@ -2,9 +2,9 @@
 
 
 let persona1 = new Persona ("max86","maxi","barbo",30,153222333,"https://source.unsplash.com/pWkk7iiCoDM/400x300");
-let persona2 = new Persona ("camu19","cami","barbo",30,153287653,"https://source.unsplash.com/aob0ukAYfuI/400x300");
-let persona3 = new Persona ("nan50","nanci","barbo",30,153987654,"https://source.unsplash.com/EUfxH-pze7s/400x300");
-let persona4 = new Persona ("ernest70","ernest","barbo",30,153198746,"https://source.unsplash.com/M185_qYH8vg/400x300");
+let persona2 = new Persona ("camu19","cami","barbo",19,153287653,"https://source.unsplash.com/aob0ukAYfuI/400x300");
+let persona3 = new Persona ("nan50","nanci","barbo",52,153987654,"https://source.unsplash.com/EUfxH-pze7s/400x300");
+let persona4 = new Persona ("ernest70","ernest","barbo",68,153198746,"https://source.unsplash.com/M185_qYH8vg/400x300");
 
 
 let array_nombres = new Array();

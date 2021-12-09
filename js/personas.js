@@ -2,17 +2,17 @@
 
 //  Aplicando funcion constructor en personas
 class Persona{
-    constructor(user,nombre,apellido,edad,contacto,image){
+    constructor(user,nombre,apellido,edad,email,image){
     this.user = user;    
     this.nombre = nombre;
     this.apellido = apellido;
     this.edad = edad;
-    this.contacto = contacto; 
+    this.email = email; 
     this.image = image;
     }
 
     info_usuario(){
 
-        return this.nombre + " " + this.apellido +  " "  + this.edad + " " + this.contacto;
+        return this.user + " " + this.edad;
     }     
 }
